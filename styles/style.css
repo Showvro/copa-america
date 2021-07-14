@@ -13,11 +13,6 @@ body {
     background: #fff;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /*----------------------------------- 
           Top Header Section
@@ -70,6 +65,9 @@ header {
 ------------------------------------- */
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 1050px;
     margin-top: 70px;
     margin-bottom: 100px;
@@ -110,6 +108,7 @@ header {
     margin-top: 10px;
     margin-bottom: 0px;
 }
+
 /*------------------------------
             News Form
 ----------------------------- */
