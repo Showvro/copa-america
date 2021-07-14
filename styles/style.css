@@ -48,13 +48,19 @@ header {
     margin-right: 5px;
     padding: 10px 24px;
     background: #E02C6D;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
 }
 
-.header-img {
+.link-btn:hover {
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+    background: #d30550;
+}
+
+.header-banner {
     margin-top: 40px;
 }
 
-.header-img:hover {
+.header-banner:hover {
     transform: scale(1.15);
     transition: transform 1s ease-in-out;
 }
@@ -104,6 +110,38 @@ header {
     margin-top: 10px;
     margin-bottom: 0px;
 }
+/*------------------------------
+            News Form
+----------------------------- */
+
+.news-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: darkblue;
+    padding: 84px 0;
+}
+
+.news-form form {
+    display: flex;
+    align-items: center;
+}
+
+.news-form h3 {
+    color: white;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.news-form input {
+    border: none;
+    padding: 15px 80px;
+    margin-right: 5px;
+    outline: none;
+}
+
 /* ------------------------------------------
                  Footer Section
 ------------------------------------------- */
@@ -159,11 +197,11 @@ footer {
         font-size: 36px;
     }
 
-    .header-img {
+    .header-banner {
         margin-top: 80px;
     }
 
-    .header-img img {
+    .header-banner img {
         width: 100%;
     }
 
@@ -180,10 +218,22 @@ footer {
         padding: 15px;
     }
 
+    .news-form h3 {
+        text-align: center;
+    }
+
+    .news-form form {
+        flex-direction: column;
+    }
+
+    .news-form input {
+        margin-bottom: 10px;
+    }
+
     footer {
         width: 100%;
     }
-    
+
     .logo img {
         height: 77px;
         width: 247px;
