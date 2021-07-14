@@ -1,0 +1,181 @@
+/*-----------------------
+        Google Font
+------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* -------------------------------------
+        Universial Section
+---------------------------------------- */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*----------------------------------- 
+          Top Header Section
+------------------------------------- */
+header {
+    height: 552px;
+    width: 100%;
+    background: darkblue;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-title {
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.link-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 5px;
+    padding: 10px 24px;
+    background: #E02C6D;
+}
+
+.header-img {
+    margin-top: 40px;
+}
+
+.header-img:hover {
+    transform: scale(1.15);
+    transition: transform 1s ease-in-out;
+}
+
+/*----------------------------------- 
+         Top Player Section
+------------------------------------- */
+
+.container {
+    width: 1050px;
+    margin-top: 70px;
+    margin-bottom: 158px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.player {
+    height: 458px;
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 0 5px 0 lightgray;
+}
+
+.player-info {
+    width: 300px;
+}
+
+.player-info h3 {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.player-info p {
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* ------------------------------------------
+                 Footer Section
+------------------------------------------- */
+
+footer {
+    height: 213px;
+    width: 483.87px;
+    margin: 0 auto;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.social-img img {
+    height: 110px;
+    width: 400px;
+}
+
+.font-color {
+    font-size: 1.5em;
+    color: gray;
+    margin: 5px;
+    padding: 10px;
+    background: lightgrey;
+    border-radius: 50%;
+}
+.social-section p{
+    font-size: 18px;
+    color: #000000;
+}
+
+/* ----------------------------------------
+         Media Queary For Mobile Devices
+----------------------------------------- */
+
+@media only screen and (max-width: 688px) {
+    header {
+        height: 750px;
+        width: 100%;
+    }
+
+    .top-header {
+        flex-direction: column;
+    }
+
+    .header-title {
+        font-size: 36px;
+    }
+
+    .header-img {
+        margin-top: 80px;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        width: auto;
+    }
+}
