@@ -65,9 +65,7 @@ header {
 ------------------------------------- */
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
     width: 1050px;
     margin-top: 70px;
     margin-bottom: 100px;
@@ -77,6 +75,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    justify-content: center;
 }
 
 .player {
@@ -214,6 +213,7 @@ footer {
 
     .player {
         width: auto;
+        margin: auto;
         padding: 15px;
     }
 
