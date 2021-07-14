@@ -54,7 +54,6 @@ header {
     margin-right: 5px;
     padding: 10px 24px;
     background: var(--primary-color);
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
 }
 
 .link-btn:hover {
@@ -142,7 +141,8 @@ header {
     padding: 10px;
     box-shadow: 0 0 5px 0 lightgray;
 }
-.thumbnail{
+
+.thumbnail {
     flex-grow: 1;
 }
 
