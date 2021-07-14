@@ -123,7 +123,7 @@ footer {
     padding: 0px;
 }
 
-.social-img img {
+.logo img {
     height: 110px;
     width: 400px;
 }
@@ -136,7 +136,8 @@ footer {
     background: lightgrey;
     border-radius: 50%;
 }
-.social-section p{
+
+.social-section p {
     font-size: 18px;
     color: #000000;
 }
@@ -177,5 +178,13 @@ footer {
 
     .player {
         width: auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 100%
     }
 }
